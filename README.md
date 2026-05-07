@@ -14,6 +14,22 @@ Auth and scopes are mocked for demo purposes. Tests use Vitest and Playwright, S
 
 ---
 
+## Screenshots
+
+### Sign in
+
+![Sign in (mock auth + ops hint)](./docs/screens/login.png)
+
+### Customer shell (home)
+
+![Host landing: auth and self-service entry points](./docs/screens/shell-home.png)
+
+### Dashboard
+
+![Protected dashboard: session, shell data, profile form](./docs/screens/dashboard.png)
+
+---
+
 ## Architecture Overview
 
 - **Host App (`host-app`)**
