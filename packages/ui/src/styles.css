@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --surface: 210 40% 98%;
+  --surface-muted: 210 40% 96%;
+  --foreground: 222 47% 11%;
+  --foreground-muted: 215 16% 47%;
+  --primary: 222 47% 11%;
+  --primary-foreground: 210 40% 98%;
+  --ring: 222 84% 48%;
+}
+
+.dark {
+  --surface: 222 47% 11%;
+  --surface-muted: 217 33% 17%;
+  --foreground: 210 40% 98%;
+  --foreground-muted: 215 20% 65%;
+  --primary: 210 40% 98%;
+  --primary-foreground: 222 47% 11%;
+  --ring: 213 94% 68%;
+}
+
+body {
+  @apply bg-surface text-foreground antialiased;
+}
