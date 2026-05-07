@@ -6,17 +6,11 @@ Built as a portfolio project to simulate real-world frontend platform systems us
 
 ---
 
-## TL;DR
+## README
 
-- React 19 + Next.js 15 (Pages Router)
-- Micro-frontends using Module Federation
-- Turborepo monorepo architecture
-- Shared UI system (`@repo/ui`)
-- Shared engineering config (`@repo/config`)
-- Auth + scoped access control demo
-- Self-service UX (profile, settings, preferences)
-- Testing: Vitest + Playwright + Storybook
-- CI/CD via GitHub Actions
+pnpm + Turborepo setup: host-app is the shell and admin-app is the federated remote. Shared UI components and basic TS/ESLint configs live in packages/ (@repo/ui, @repo/config).
+
+Auth and scopes are mocked for demo purposes. Tests use Vitest and Playwright, Storybook is used for UI components, and a simple GitHub Actions workflow handles CI.
 
 ---
 
