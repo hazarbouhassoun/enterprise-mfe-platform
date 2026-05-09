@@ -217,7 +217,13 @@ export default function AccountPreferencesPage() {
             {prefs.isError ? (
               <div className="flex flex-col gap-2">
                 <p className="text-sm text-red-600">Couldn&apos;t load preferences.</p>
-                <Button type="button" variant="outline" size="sm" className="w-fit" onClick={() => void prefs.refetch()}>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  className="w-fit"
+                  onClick={() => void prefs.refetch()}
+                >
                   Retry
                 </Button>
               </div>

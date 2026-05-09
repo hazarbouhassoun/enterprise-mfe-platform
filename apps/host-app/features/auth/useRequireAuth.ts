@@ -11,8 +11,7 @@ export function useRequireAuth(redirectTo = '/login') {
 
   useEffect(() => {
     if (!getIsAuthenticatedSnapshot()) {
-      const from =
-        typeof window !== 'undefined' ? window.location.pathname : undefined;
+      const from = typeof window !== 'undefined' ? window.location.pathname : undefined;
       if (from && shellRouteNeedsSession(from)) {
         trackClientEvent('auth_redirect', { to: redirectTo, from });
       }

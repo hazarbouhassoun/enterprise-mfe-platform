@@ -155,7 +155,13 @@ export default function DashboardPage({ serverTime }: Props) {
             {profile.isError ? (
               <div className="flex flex-col gap-2">
                 <p className="text-red-600">Couldn&apos;t load profile (mock API).</p>
-                <Button type="button" variant="outline" size="sm" className="w-fit" onClick={() => void profile.refetch()}>
+                <Button
+                  type="button"
+                  variant="outline"
+                  size="sm"
+                  className="w-fit"
+                  onClick={() => void profile.refetch()}
+                >
                   Try again
                 </Button>
               </div>

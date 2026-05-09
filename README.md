@@ -50,12 +50,14 @@ Auth and scopes are mocked for demo purposes. Tests use Vitest and Playwright, S
 ## Key Features
 
 ### Platform Capabilities
+
 - Authentication demo (Zustand-based session)
 - Scoped access control (feature gating)
 - Self-service forms (RHF + Zod)
 - Protected dashboard flows
 
 ### Frontend Architecture
+
 - Feature-based structure
 - Shared UI system
 - API abstraction layer
@@ -63,6 +65,7 @@ Auth and scopes are mocked for demo purposes. Tests use Vitest and Playwright, S
 - SSR + dynamic imports
 
 ### Engineering Practices
+
 - Monorepo with Turborepo
 - CI pipeline (lint, typecheck, test, build, e2e)
 - Component documentation (Storybook)
@@ -77,3 +80,4 @@ Internal context (demo limitations, federation quirks, backlog): [`docs/engineer
 ```bash
 pnpm install
 pnpm dev
+```

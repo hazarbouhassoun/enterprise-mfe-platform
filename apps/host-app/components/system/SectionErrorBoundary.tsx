@@ -26,7 +26,9 @@ export class SectionErrorBoundary extends Component<Props, State> {
         <Card>
           <CardHeader>
             <CardTitle>{this.props.title}</CardTitle>
-            <CardDescription>Couldn&apos;t render this block — remote or local code threw.</CardDescription>
+            <CardDescription>
+              Couldn&apos;t render this block — remote or local code threw.
+            </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col gap-3">
             <p className="text-sm text-foreground-muted">{this.state.error?.message}</p>
